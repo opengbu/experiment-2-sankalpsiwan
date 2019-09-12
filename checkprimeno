@@ -1,0 +1,34 @@
+//Submitted by Sankalp Pandey
+//Bsc(H)Physics
+//Roll no- 19/BHP/021
+// To check whether a number is prime or not.
+
+
+
+    #include <iostream>
+    using namespace std;
+    int main()
+    {
+      float n, i;
+      
+	   float Prime = true;
+      
+	  cout << "Please enter a positive integer: ";
+      cin >> n;
+      
+	  
+	  
+	  for(i = 2; i <= n/2 ; ++i)
+      {
+          if(n % i == 0)
+          {
+               Prime = false;
+              break;
+          }
+      }
+      if (Prime)
+          cout << "Provided integer is a Prime number";
+      else
+          cout << "Provided integer is not a Prime number";
+      return 0;
+    }
